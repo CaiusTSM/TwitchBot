@@ -2,7 +2,7 @@
 	"server": "irc.twitch.tv",
 	"username": "username",
 	"oauth": "oauth:",
-	"channels": ["#angerbeard"],
+	"channels": ["#channel_name"],
 	"log": true,
 	"meritTimer": 300,
 	"meritGain": 1,
