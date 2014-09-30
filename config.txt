@@ -6,5 +6,6 @@
 	"log": true,
 	"meritTimer": 300,
 	"meritGain": 1,
-	"raffleTimer": 300
+	"raffleTimer": 300,
+	"announcementTimer": 600
 }
