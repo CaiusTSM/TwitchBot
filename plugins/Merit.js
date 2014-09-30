@@ -88,12 +88,17 @@ exports.onJoin = function(config, bot, data) {
 }
 
 exports.onLeave = function(config, bot, data) {
+	for (var i = 0; i < users.length; i++) {
+		if (users[i].name.toUpperCase() == data.name.toUpperCase()) {
+			users[i].online = false;
+			break;
+		}
+	}
     for (var i = 0; i < data.online.length; i++) {
         if (data.online[i].toUpperCase() != "JTV" && data.online[i].toUpperCase() != config.username.toUpperCase()) {
             var alreadyUser = false;
             for (var j = 0; j < users.length; j++) {
                 if (users[j].name.toUpperCase() == data.online[i].toUpperCase()) {
-                    users[j].online = false;
                     alreadyUser = false;
                     break;
                 }
