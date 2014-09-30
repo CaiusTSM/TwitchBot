@@ -1,4 +1,6 @@
 TwitchBot
 =========
 
-An IRC bot.
+An IRC bot for twitch.tv.
+
+License is in License.txt.

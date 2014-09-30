@@ -1,0 +1,10 @@
+{
+	"server": "irc.twitch.tv",
+	"username": "username",
+	"oauth": "oauth:",
+	"channels": ["#angerbeard"],
+	"log": true,
+	"meritTimer": 300,
+	"meritGain": 1,
+	"raffleTimer": 300
+}
