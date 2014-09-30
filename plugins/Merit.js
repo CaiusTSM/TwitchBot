@@ -96,14 +96,7 @@ exports.onLeave = function(config, bot, data) {
 	}
     for (var i = 0; i < data.online.length; i++) {
         if (data.online[i].toUpperCase() != "JTV" && data.online[i].toUpperCase() != config.username.toUpperCase()) {
-            var alreadyUser = false;
-            for (var j = 0; j < users.length; j++) {
-                if (users[j].name.toUpperCase() == data.online[i].toUpperCase()) {
-                    alreadyUser = false;
-                    break;
-                }
-            }
-            if (!alreadyUser && getUserByName(data.online[i].toUpperCase()) == null)
+            if (getUserByName(data.online[i].toUpperCase()) == null)
                 users.push({name: data.online[i].toUpperCase(), merit: 0, online: false});
         }
     }
