@@ -7,6 +7,10 @@ License is in License.txt.
 
 Open config.txt and configure it before using.
 
+In /data/ there is files which contain data and/or configuration for the plugins. Such as Announcement.js,
+ and Admin.js. Admin.js has a file called admins.txt, it should contain a list of all admins (one name per line). announcement.txt
+  contains the announcement the bot will say every once in a while.
+
 *Commands:*
 !merit - Display merit.
 !merit on - Enable merit gain.
